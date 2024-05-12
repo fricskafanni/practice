@@ -1,0 +1,15 @@
+
+RewriteEngine On
+ 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+ 
+RewriteEngine On
+ 
+RewriteRule ^admin$ admin.php [NC,L]
+RewriteRule ^user_page$ user_page.php [NC,L]
+RewriteRule ^edit$ edit.php [NC,L]
+RewriteRule ^create$ create.php [NC,L]
+
+RewriteRule ^edit_user/(.*)$ edit_user.php?id=$1 [L]
+RewriteRule ^edit_password/(.*)$ edit_password.php?id=$1 [L]

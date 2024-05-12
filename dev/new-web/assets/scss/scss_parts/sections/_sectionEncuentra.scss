@@ -1,0 +1,23 @@
+// Section Encuentra
+.section-encuentra {
+    background: $dark-blue;
+    overflow-x: unset;
+    padding: 100px 0;
+    .section-encuentra-img{
+        margin: 40px 0;
+        width: 100%;
+        border: 1px solid $grey-border;
+        border-radius: 15px;
+    }
+    
+}
+
+@include mq($breakpoints-mq--480) {
+    .section-encuentra {
+        .section-encuentra-img{
+            height: 349px;
+            height: 310px;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+// Footer
+
+.footer {
+    background: $dark-blue;
+    .footer-inner{
+        .footer-logo_container {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 50px 0;
+            align-items: center;
+            
+            .footer-social_media_logos{
+                display: flex;
+                gap: 15px;
+            }
+        }
+        
+        .footer-text_col_container{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 0 50px;
+            flex-flow: row wrap;
+            
+            .footer-text_colu-content{
+                gap: 20px;
+                
+                .footer-col_text{
+                    padding: 10px 0;
+                }
+                .footer-text{
+                    color: $light-grey;
+                }
+            }
+        }
+        
+        .footer-astara_2024-container{
+            padding: 50px 0;
+            border-top: 1px solid $light-grey;
+            width: 100%;
+            justify-content: flex-end;
+            
+            .footer-astara_2024_text{
+                text-align: right;
+            }
+        }
+        
+        .footer-contact_list{
+            display: flex;
+            gap: 30px;
+            padding: 0 0 50px;
+            flex-flow: row wrap;
+        }
+    }
+}
+
+@include mq($breakpoints-mq--480) {
+    .footer {
+        .footer-inner{
+            .footer-text_col_container{
+                flex-direction: column;
+                text-align-last: center;
+            }
+            .footer-contact_list{
+                flex-direction: column;
+                text-align-last: center;
+            }
+            .footer-astara_2024-container{
+                text-align-last: center;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,13 @@
+// Add Link Component
+.addLink{
+    text-decoration: unset;
+    
+    width: fit-content;
+    padding: 10px 0;
+    border-bottom: 1px solid $black;
+}
+
+.addLink::after{
+    content: url("../../assets/images/add.png");
+    padding: 0 10px;
+}

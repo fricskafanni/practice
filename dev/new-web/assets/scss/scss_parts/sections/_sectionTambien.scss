@@ -1,0 +1,43 @@
+// Section Tambien
+
+.section-tambien {
+    background: $grey;
+    padding: 100px 0 100px;
+    .section-tambien-inner{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        .section-tambien-title{
+            width: 50%;
+            padding: 0 20px 0 0;
+        }
+        .section-tambien-text{
+            width: 50%;
+        }
+        
+        .section-tambien-box_cards{
+            display: flex;
+            gap: 10px;
+            align-items: stretch;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 100%;
+            margin-top: 50px;
+            flex-flow: row wrap;
+            
+            .section-tambien-box_cards-item{
+                width: calc(33% - 10px);
+                
+                &:first-child{
+                    background: url("../../assets/images/innovadores.png");
+                    background-size: cover;
+                }
+                &:nth-child(2){
+                    background:  url("../../assets/images/humanos.png");
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}

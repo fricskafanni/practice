@@ -1,0 +1,22 @@
+// Section Vehiculo
+.section-vehiculo {
+    background: $grey;
+    overflow-x: unset;
+    padding: 0 0 100px 0;
+    
+    .section-hero-container-relative{
+        .section-vehiculo-inner{
+            .section-vehiculo-title_container{
+                .section-vehiculo-text{
+                        padding: 0 0 20px;
+                }
+            }
+        }
+    }
+}
+    
+@include mq($breakpoints-mq--768) {
+    .section-vehiculo {
+        padding: 50px 0;
+    }
+}  

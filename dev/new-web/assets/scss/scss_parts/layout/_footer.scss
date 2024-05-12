@@ -1,0 +1,9 @@
+//FOOTER
+.section-footer {
+}
+
+@include mq($breakpoints-mq--1200) {
+    .section-footer {
+       
+    }
+}

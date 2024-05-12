@@ -1,0 +1,85 @@
+//Section Home Sin Car Sharing
+.section-noticitas {
+    background: $yellow;
+    padding: 100px 0;
+
+    .section-noticitas-inner {
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .section-noticitas-title {
+            width: 50%;
+        }
+    }
+
+    .section-noticitas-cards {
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        
+        .slick-track {
+            display: flex;
+            width: 100%;
+        }
+
+        .section-noticitas-cards-item {
+            max-width: 365px;
+            width: 25vw;
+            margin: 0 20px;
+
+            &.slick-current {
+                width: 45vw;
+                object-fit: contain;
+                max-width: 630px;
+            }
+
+            .section-noticitas-cards-image {
+                height: 320px;
+                width: -webkit-fill-available;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+            
+            .section-noticitas-cards-item-title{
+                padding: 20px 0 0;
+            }
+            
+            .section-noticitas-cards-item-text {
+                padding: 20px 0;
+            }
+        }
+    }
+}
+
+@include mq($breakpoints-mq--960) {
+    .section-noticitas {
+        .section-noticitas-cards {
+            .section-noticitas-cards-item{
+                .section-noticitas-cards-image {
+                    height: 220px;
+                }
+            }
+        }
+    }
+}
+
+
+@include mq($breakpoints-mq--480) {
+    .section-noticitas {
+        .section-noticitas-cards {
+        .section-noticitas-cards-item {
+            width: 90vw;
+            
+            &.slick-current {
+                width: 90vw;
+            }
+                .section-noticitas-cards-image {
+                    height: 220px;
+                }
+            }
+        }
+    }
+}

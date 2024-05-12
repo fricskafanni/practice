@@ -1,0 +1,54 @@
+//Card Text Item
+.cards-item-relative{
+    position: relative;
+    width: 100%;
+    
+    .card-item-text{
+        position: unset;
+        width: 100%;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        padding: 12px;
+        
+        .card-item-number {
+            position: absolute;
+            top: -45px;
+            left: 20px;
+        }
+        
+        .title-border{
+            height: 3px;
+            width: 52px;
+            background: $yellow;
+            margin: 15px 0;
+        }
+        
+        .textCard{
+            margin-top: 20px;
+            min-height: 80px;
+        }
+    }
+
+}
+
+
+@include mq($breakpoints-mq--1200) {
+    .cards-item-relative{
+        .card-item-text{
+           min-height: 220px; 
+        }
+    }
+}
+
+@include mq($breakpoints-mq--480) {
+    .cards-item-relative{
+        margin: 20px 0;
+        
+        .card-item-text{
+           min-height: 180px; 
+        }
+    }
+}

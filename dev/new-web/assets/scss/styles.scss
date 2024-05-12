@@ -1,0 +1,57 @@
+// 1. Configuration and helpers
+@import 'scss_parts/abstracts/variables',
+'scss_parts/abstracts/functions',
+'scss_parts/abstracts/mixins';
+
+// 2. Vendors
+@import 'scss_parts/vendors/normalize';
+
+@import 'scss_parts/themes/themes';
+
+// 3. Base stuff
+@import 'scss_parts/base/base',
+'scss_parts/base/fonts',
+'scss_parts/base/typography',
+'scss_parts/base/icons',
+'scss_parts/base/helpers';
+
+// 4. Layout-related sections
+@import 'scss_parts/layout/footer',
+'scss_parts/layout/header';
+
+// 5. Components 
+@import 'scss_parts/components/button',
+'scss_parts/components/cardImage',
+'scss_parts/components/cardText',
+'scss_parts/components/header',
+'scss_parts/components/footer',
+'scss_parts/components/add',
+'scss_parts/components/textAndImgShare',
+'scss_parts/components/slickArrowButton';
+
+// 6. Sections 
+@import 'scss_parts/sections/sectionHero',
+'scss_parts/sections/sectionCardImagesCol4',
+'scss_parts/sections/sectionCardImagesCol4Second',
+'scss_parts/sections/sectionCardTextsCol4',
+'scss_parts/sections/sectionAstaraApp',
+'scss_parts/sections/sectionHomeSinCarSharing',
+'scss_parts/sections/sectionEcosistema',
+'scss_parts/sections/sectionWood',
+'scss_parts/sections/sectionMovilidad',
+'scss_parts/sections/sectionMapCountry',
+'scss_parts/sections/sectionNoticitas',
+'scss_parts/sections/sectionMobiltityCompany',
+'scss_parts/sections/sectionMove',
+'scss_parts/sections/sectionSostenibilidad',
+'scss_parts/sections/sectionTalento',
+'scss_parts/sections/sectionVehiculo',
+'scss_parts/sections/sectionColumn3',
+'scss_parts/sections/sectionEncuentra',
+'scss_parts/sections/sectionTambien';
+
+// 7. Page 
+@import 'scss_parts/pages/home';
+
+
+

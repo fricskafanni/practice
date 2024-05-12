@@ -1,0 +1,81 @@
+// Section Talento
+.section-talento {
+    background: $white;
+    padding: 100px 0 100px;
+    
+    .section-talento-inner{
+        .section-talento-card-container{
+            position: relative;
+            .section-talento-card-content{
+                width: 100%;
+                
+                .section-talento-img{
+                    margin: 0 10px;
+                    &:first-child{
+                        margin-left: calc(1.5% / 2);
+                    }
+                }
+            }
+        }
+        .section-talento-list-container{
+            padding: 50px 0;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            
+            .section-talento-list_text-content{
+                width: 50%;
+                height: fit-content;
+                max-width: 510px;
+                margin: 0 auto 0 0;
+                padding: 30px 0;
+                position: relative;
+                align-content: center;
+                
+                .section-talento-list_text-title{
+                    position: relative;
+                    z-index: 10;
+                }
+                
+                .section-talento-list-box{
+                    position: absolute;
+                    height: 100%;
+                    top: 0;
+                    width: 2000px;
+                    right: 0;
+                    background: $yellow;
+                    z-index: 1;
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                }
+                
+            }
+            .section-talento-list_talento-content{
+                width: 50%;
+                max-width: 520px;
+                margin: 0 auto;
+                padding: 0 0 0 20px;
+                
+                .section-talento-list_talento-text{
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+}
+
+@include mq($breakpoints-mq--480) {
+    .section-talento {
+        .section-talento-inner{
+            .section-talento-list-container{
+                .section-talento-list_text-content{
+                    width: 100%;
+                }
+                .section-talento-list_talento-content{
+                    width: 100%;
+                    padding: 50px 0;
+                }
+            }
+        }
+    }
+}

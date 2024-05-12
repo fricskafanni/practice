@@ -1,0 +1,33 @@
+// **** COLORS ****
+//general
+$black: rgba(30, 25, 50, 1);
+$white: #FFF;
+$grey: rgba(238, 238, 238, 1);
+$grey-border: rgba(143, 143, 143, 1);
+$light-grey: rgba(255, 255, 255, 0.35);
+$yellow: rgba(250, 180, 45, 1);
+$dark-blue: rgba(30, 25, 50, 1);
+
+// **** BREAKPOINTS - SIZE ****
+$breakpoints-mq--480: 480px; 
+$breakpoints-mq--768: 768px; 
+$breakpoints-mq--960: 960px; 
+$breakpoints-mq--1024: 1024px; 
+$breakpoints-mq--1200: 1200px; 
+$breakpoints-mq--1440: 1440px;
+
+$grid-container: 1440px;
+
+// **** TRANSITIONS ****
+$linear-fast: .1s linear;
+$linear-medium: .3s linear;
+$linear-slow: .5s linear;
+$ease-fast: .1s ease-in-out;
+$ease-medium: .3s ease-in-out;
+$ease-slow: .5s ease-in-out;
+$easein-fast: .1s ease-in;
+$easein-medium: .3s ease-in;
+$easein-slow: .5s ease-in;
+$easeout-fast: .1s ease-out;
+$easeout-medium: .3s ease-out;
+$easeout-slow: .5s ease-out;

@@ -1,0 +1,68 @@
+// Section Map Country
+.section-map_country {
+    background: $dark-blue;
+    padding: 100px 0;
+    .section-map_country-inner{
+        text-align: -webkit-center;
+        
+        .section-map_country-title{
+            display: flex;
+            justify-content: center;
+            max-width: 720px;
+            text-align: -webkit-center;
+        }
+        .section-map_country-text{
+            display: flex;
+            justify-content: center;
+            max-width: 720px;
+            text-align: -webkit-center;
+        }
+        
+        .section-map_country-cards{
+            display: flex;
+            gap: 30px;
+            align-items: stretch;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 100%;
+            margin-top: 50px;
+            .section-map_country-cards-item-content{
+                width: calc(33% - 10px);
+                padding: 30px;
+                align-items: center;
+                
+                .section-map_country-cards-item{
+                    width: 100%;
+                    height: 100%;
+                    
+                    &:first-child{
+                        background: url("../../assets/images/europe.png");
+                        background-size: cover;
+                    }
+                    &:nth-child(2){
+                        background:  url("../../assets/images/america-latina.png");
+                        background-size: cover;
+                    }
+                    &:nth-child(3){
+                        background:  url("../../assets/images/asia.png");
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mq($breakpoints-mq--480) {
+.section-map_country {    
+        .section-map_country-inner{
+            .section-map_country-cards {
+                flex-direction: column;
+                
+                .section-map_country-cards-item-content{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <link rel="stylesheet" href="counter.css" type="text/css" />
+</head>
+<body class="home">
+    <section class="section hero hero--primary hero-has--subtitle hero-has--buttons hero--bg-color animated" style="">
+		<div class="md:relative wrapper">
+      		<div class="my-0 mx-0 md:mx-auto hero__wrapper hero--bg-color" style="">
+				<div class="hero__container">
+	               <h1 class="hero__title">
+	               		<span class="text-neutral-white"> Se avecina</span>	<span class="text-pink">una nueva era</span>
+	              	</h1>
+	            	<div class="hero__subtitle">
+						<div class="hero__text text-neutral-white">
+	                		<p class="title">Se avecina <span>una <strong class="text-pink">nueva era</strong></span></p>
+              				<p class="description"><b>Unificamos nuestras fuerzas</b> para convertirnos en una <b>única compañía</b>, más grande, más potente y, sobre todo, <b>más humana</b>.</p>
+							<div class="container--countdown" id="countdown">
+
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			<div class="svg-counter">
+				
+				<div id="time">
+					<div class="circle" style="--clr:#fff">
+							<svg>
+								<circle cx="70" cy="70" r="70"></circle>
+								<circle cx="70" cy="70" r="70" id="dd"></circle>
+							</svg>
+							<div id="days">00<br><span>days</span></span></div>
+					</div>
+				
+					<div class="circle" style="--clr:#fff">
+							<svg>
+								<circle cx="70" cy="70" r="70"></circle>
+								<circle cx="70" cy="70" r="70" id="hh"></circle>
+							</svg>
+							<div id="hours">00<br><span>hours</span></div>
+					</div>
+						
+					<div class="circle" style="--clr:#fff">
+							<svg>
+								<circle cx="70" cy="70" r="70"></circle>
+								<circle cx="70" cy="70" r="70" id="mm"></circle>
+							</svg>
+							<div id="minutes">00<br><span>min</span></div>
+					</div>
+					
+					<div class="circle" style="--clr:#fff">
+							<svg>
+								<circle cx="70" cy="70" r="70"></circle>
+								<circle cx="70" cy="70" r="70" id="ss"></circle>
+							</svg>
+							<div id="seconds"><br><span>sec</span></div>
+					</div>
+				</div>
+			</div>
+
+			<object type="image/svg+xml" data="test-counter1.svg"></object>
+
+			In this case, the SVG will not be available on image search. To fix this, you can use a <img> tag as a fallback:
+			
+			<object type="image/svg+xml" data="test-counter1.svg">
+			
+			<img src="test-counter1.svg" />
+			
+			</object>
+			
+		</div>
+	</section>
+</body>
+</html>
+
+
+<script src="counter.js"></script>

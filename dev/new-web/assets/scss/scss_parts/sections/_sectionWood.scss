@@ -1,0 +1,19 @@
+// Section Wood
+.section-wood {
+    background: url("../../assets/images/wood.png");
+    
+    .section-wood-inner{
+        .section-wood-col_numbers_container{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 60px 0;
+            flex-wrap: wrap;
+            
+            .section-wood-col_numbers_item{
+                padding: 0 0 0 20px;
+                margin: 10px 0;
+                border-left: 1px solid $yellow;
+            }  
+        }
+    }
+}

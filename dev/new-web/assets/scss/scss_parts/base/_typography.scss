@@ -1,0 +1,215 @@
+body {
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+h1.item-none {
+  display: none;
+}
+
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p, li, h1, h3, h4, h5{
+  font-family: $main-font;
+}
+
+
+@mixin titleDefault($color: $black, $fontSize: 48px, $fontFamily: $main-font, $lineHeight: 1.2, $textTransform: initial, $fontWeight: 400, $textAlign: left, $padding: 0 0 20px) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  text-transform: $textTransform;
+  color: $color;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  text-align: $textAlign;
+  padding: $padding;
+}
+
+@mixin textDefault($color: $black, $fontSize: 16px, $fontFamily: $main-font, $lineHeight: 20.83px, $textTransform: initial, $fontWeight: 400, $textAlign: left) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  text-transform: $textTransform;
+  color: $color;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  text-align: $textAlign;
+}
+
+@mixin titleCardImage($color: $black, $fontSize: 21px, $fontFamily: $main-font, $lineHeight: 1.2, $textTransform: initial, $fontWeight: 600, $textAlign: left) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  text-transform: $textTransform;
+  color: $color;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  text-align: $textAlign;
+}
+
+@mixin textCard($color: $white, $fontSize: 14px, $fontFamily: $main-font, $lineHeight: 19px, $textTransform: initial, $fontWeight: 400, $textAlign: left) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  text-transform: $textTransform;
+  color: $color;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  text-align: $textAlign;
+}
+
+@mixin titleCard($color: $black, $fontSize: 25px, $fontFamily: $main-font, $lineHeight: 1.2, $textTransform: initial, $fontWeight: 600, $textAlign: left) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  text-transform: $textTransform;
+  color: $color;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  text-align: $textAlign;
+}
+
+@mixin cardNumber($color: $yellow, $fontSize: 80px, $fontFamily: $main-font, $lineHeight: 1.2, $textTransform: initial, $fontWeight: 600, $textAlign: left) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  text-transform: $textTransform;
+  color: $color;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  text-align: $textAlign;
+}
+
+@mixin buttonText($color: $black, $fontSize: 16px, $fontFamily: $main-font, $lineHeight: 1.2, $textTransform: initial, $fontWeight: 500, $textAlign: left) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  text-transform: $textTransform;
+  color: $color;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  text-align: $textAlign;
+}
+
+@mixin textExtra($color: $black, $fontSize: 32px, $fontFamily: $main-font, $lineHeight: 40px, $textTransform: initial, $fontWeight: 400, $textAlign: left) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  text-transform: $textTransform;
+  color: $color;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  text-align: $textAlign;
+}
+
+.title {
+  @include titleDefault;
+  
+  &--white {
+    @include titleDefault($color: $white);
+  }
+  &--bold {
+    @include titleDefault($fontWeight: 600);
+  }  
+  &--white-bold {
+    @include titleDefault($color: $white, $fontWeight: 600);
+  }
+}
+
+.text{
+    @include textDefault;
+    
+    &--white {
+      @include textDefault($color: $white);
+    }
+    &--yellow-bold {
+      @include textDefault($fontWeight: 600);
+    }
+}
+
+.titleCardImage {
+  @include titleCardImage;
+  
+  &--white {
+    @include titleCardImage($color: $white);
+  }
+  
+}
+
+.textCard {
+  @include textCard;
+  
+  &--yellow-bold {
+    @include textCard($color: $yellow, $fontWeight: 600);
+  }
+  
+  &--white-light-bold {
+    @include textCard($color: $white, $fontWeight: 500);
+  }
+}
+
+.textExtra {
+  @include textExtra;
+  
+  &--white {
+    @include textCard($color: $white);
+  }
+}
+
+.titleCard {
+  @include titleCard;
+}
+
+.cardNumber {
+  @include cardNumber;
+}
+
+.buttonText {
+  @include buttonText;
+  
+  &--white {
+    @include buttonText($color: $white);
+  }
+}
+
+//breakpoint at 768 
+
+@include mq($breakpoints-mq--768) {
+  .title {
+    @include titleDefault($fontSize: 32px);
+    
+    &--white {
+      @include titleDefault($fontSize: 32px, $color: $white);
+    }
+    &--bold {
+      @include titleDefault($fontSize: 32px, $fontWeight: 600);
+    }  
+    &--white-bold {
+      @include titleDefault($fontSize: 32px, $color: $white, $fontWeight: 600);
+    }
+  }
+  .text{
+     @include textDefault($fontSize: 12px);
+     
+    &--white {
+      @include textDefault($fontSize: 12px, $color: $white);
+    }
+    &--bold {
+      @include textDefault($fontSize: 12px, $fontWeight: 600);
+    }
+  }
+  
+  .textExtra {
+    @include textExtra($fontSize: 24px);
+  }
+}

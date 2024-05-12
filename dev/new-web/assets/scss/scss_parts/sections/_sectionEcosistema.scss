@@ -1,0 +1,73 @@
+//Section Ecosistema
+.section-ecosistema {
+    background: $grey;
+    padding: 100px 0;
+    .section-ecosistema-inner{
+        text-align: -webkit-center;
+        
+        .section-ecosistema-title{
+            display: flex;
+            justify-content: center;
+            max-width: 720px;
+            text-align: -webkit-center;
+        }
+        .section-ecosistema-text{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .section-ecosistema-cards{
+            display: flex;
+            gap: 30px;
+            align-items: stretch;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 100%;
+            margin-top: 50px;
+            .section-ecosistema-cards-item{
+                width: calc(50% - 30px);
+                min-height: 600px;
+                padding: 30px;
+                
+                &:first-child{
+                    background: url("../../assets/images/car_card.png");
+                    background-size: cover;
+                }
+                &:nth-child(2){
+                    background:  url("../../assets/images/girlinthecar.png");
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}
+
+@include mq($breakpoints-mq--960) {
+    .section-ecosistema {
+        .section-ecosistema-inner{
+    
+            .section-ecosistema-cards{    
+                .section-ecosistema-cards-item{
+                    min-height: 500px;
+                }
+            }
+            
+        }
+        
+    }
+}
+
+@include mq($breakpoints-mq--768) {
+    .section-ecosistema {
+        .section-ecosistema-inner{
+            .section-ecosistema-cards{    
+                flex-direction: column;
+                
+                .section-ecosistema-cards-item{
+                    width: 100%;
+                    min-height: 350px;
+                }
+            }
+        }
+    }   
+}

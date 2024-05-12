@@ -1,0 +1,185 @@
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+    height: 100%;
+    align-content: center;
+    padding-top: 150px;
+    width: fit-content;
+}
+
+.card-body {
+    height: fit-content;
+    margin: auto;
+    width: 100%;
+    flex: unset;
+}
+
+.card{
+    height: 370px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgba(0,0,0,0.5) !important;
+    overflow-y: scroll;
+}
+
+.user-page {
+    display: flex;
+}
+
+.card h3, .pls{
+    color: white;
+}
+
+.social_icon{
+    position: absolute;
+    right: 20px;
+    top: -45px;
+}
+
+.input-group-prepend label{
+    width: 50px;
+    background-color: #FFC312;
+    color: black;
+    border:0 !important;
+    width: fit-content;
+}
+
+input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+button a {
+    color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    color: white;
+    max-width: 650px;
+}
+
+.user-page.container .form-group {
+    display: flex;
+    gap: 10px;
+}
+
+.user-page.container .header{
+    padding: 40px 20px;
+}
+
+.user-page.container .card-body {
+    margin: unset;
+}
+
+.table-class th, td {
+    border: none;
+    width: fit-content;
+    padding: 20px;
+}
+.table-class thead {
+    position: sticky; 
+    top: 0;
+    background: rgb(194, 152, 172);
+    z-index: 100;
+}
+    
+.table-class tr {
+    border-bottom: 1px solid white;
+}
+
+.card::-webkit-scrollbar {
+  display: none;
+}
+
+.table-class tbody .btn {
+    background: rgb(233, 164, 149);
+}
+
+.profile {
+    position: absolute;
+}
+
+.profile .logout {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-container img {
+    height: 100px;
+    background: rgb(233, 164, 149, 0.6);
+    padding: 25px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.card .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.profile {
+    background: rgb(193, 152, 172, 0.3);
+    padding: 20px 0;
+}
+
+.profile .admin-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.table-responsive .create-btn{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.table-responsive .create-btn button{
+    background: rgb(249, 151, 60, .8);
+    border: rgb(249, 151, 60);
+}
+
+.table-responsive {
+    flex-direction: column;   
+    border: none;
+}

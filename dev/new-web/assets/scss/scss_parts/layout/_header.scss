@@ -1,0 +1,10 @@
+//HEADER
+
+.section-header {
+}
+
+@include mq($breakpoints-mq--1200) {
+    .section-header {
+       
+    }
+}

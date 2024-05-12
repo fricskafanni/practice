@@ -1,0 +1,63 @@
+// Section Mobility Company
+.section-mobility_company {
+    background: $yellow;
+    padding: 100px 0;
+    position: relative;
+    
+    .section-mobility_company-inner{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        .section-mobility_company-title{
+            text-align: center;
+            width: 100%;
+        }
+        .section-mobility_company-text{
+            text-align: center;
+            max-width: 600px;
+        }
+        .section-mobility_company-video-container{
+            width: 90%;
+            padding: 30px 0 0;
+            z-index: 1;
+            
+            .section-mobility_company-img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+    }
+    .section-mobility_company-background{
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        bottom: 0;
+        background: $dark-blue;
+    }
+}
+
+@include mq($breakpoints-mq--768) {
+    .section-mobility_company {
+        .section-mobility_company-inner{
+            .section-mobility_company-video-container{
+                height: 500px;
+                
+                .section-mobility_company-img{
+                    object-fit: cover;
+                    border-radius: 15px;
+                }
+            }
+        }
+    }
+}
+
+@include mq($breakpoints-mq--480) {
+    .section-mobility_company {
+        .section-mobility_company-inner{
+            .section-mobility_company-text{
+                text-align: left;
+            }
+        }
+    }
+}

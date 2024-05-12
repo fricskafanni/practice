@@ -1,0 +1,12 @@
+// Section Card Images
+.section-hero {
+    background: $grey;
+    overflow-x: unset;
+    padding: 0 0 100px 0;
+}
+
+@include mq($breakpoints-mq--768) {
+    .section-hero {
+        padding: 50px 0;
+    }
+}

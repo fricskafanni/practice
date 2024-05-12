@@ -1,0 +1,84 @@
+// Section Card texts
+.section-card_texts_col4 {
+    background: $grey;
+    padding: 100px 0;
+    .section-card_texts_col4-inner {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        .section-card_texts_col4-title{
+            display: block;
+            width: 40%;
+            max-width: 500px;
+        }
+        .section-card_texts_col4-text{
+            display: block;
+            width: 50%;
+            max-width: 750px;
+        }
+        .section-card_texts_col4-box_cards{
+            display: flex;
+            gap: 10px;
+            align-items: stretch;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 100%;
+            margin-top: 95px;
+            .section-card_texts_col4-box_cards-item{
+                width: calc(25% - 10px);
+                
+                &:first-child{
+                    background-color: $white;
+                }
+                &:nth-child(2){
+                    background-color: $white;
+                }
+                &:nth-child(3){
+                    background-color: $white;
+                }
+                &:last-child{
+                    background-color: $white;
+                } 
+            }
+        }
+    }
+}
+
+@include mq($breakpoints-mq--768) {
+    .section-card_texts_col4 {
+        padding: 50px 0;
+        .section-card_texts_col4-inner {
+            flex-direction: column;
+            .section-card_texts_col4-title{
+                width: 100%;
+            }
+            .section-card_texts_col4-text{
+                width: 100%;
+                max-width: 100%;
+                margin-top: 20px;
+            }
+            .section-card_texts_col4-box_cards{
+                 flex-flow: row wrap;
+                .section-card_texts_col4-box_cards-item{
+                    width: calc(50% - 10px);
+                }
+            }
+        }
+    }
+}
+
+@include mq($breakpoints-mq--480) {
+    // Section Card Texts
+    .section-card_texts_col4 {
+        padding: 35px 0;
+        .section-card_texts_col4-inner {
+             .section-card_texts_col4-box_cards{
+                 flex-flow: column wrap;
+                .section-card_texts_col4-box_cards-item{
+                    width: 100%;
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+}

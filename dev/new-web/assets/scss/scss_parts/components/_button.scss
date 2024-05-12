@@ -1,0 +1,40 @@
+.button {
+        
+    padding: 13px 24px;
+    border-radius: 999px;
+    border: none;
+    width: fit-content;
+    
+    &--dark-blue {
+        background: $dark-blue;
+        color: $white;
+    }
+    
+    &--yellow {
+        background: $yellow;
+    }    
+    
+    &--white {
+        background: $white;
+    }
+    
+    &--arrow-light{
+        p::after {
+            content: url("../../assets/images/arrow_right_alt.png");
+            padding: 0 0 0 8px;
+        }
+    }
+    &--arrow-dark{
+        p::after {
+            content: url("../../assets/images/arrow_right_dark.png");
+            padding: 0 0 0 8px;
+        }
+    }
+    
+}
+
+@include mq($breakpoints-mq--768) {
+    .button {
+        margin: 20px 0;
+    }
+}

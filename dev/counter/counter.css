@@ -1,0 +1,202 @@
+
+        @font-face {
+            font-family: 'metropolis_extrabold';
+            src: url('https://ayesa-assets.s3-eu-west-1.amazonaws.com/fonts/Metropolis-ExtraBold.woff2') format('woff2'),
+                 url('https://ayesa-assets.s3-eu-west-1.amazonaws.com/fonts/Metropolis-ExtraBold.woff') format('woff');
+        }
+
+        @font-face {
+            font-family: 'metropolis_regular';
+            src: url('https://ayesa-assets.s3-eu-west-1.amazonaws.com/fonts/Metropolis-Regular.woff2') format('woff2'),
+                 url('https://ayesa-assets.s3-eu-west-1.amazonaws.com/fonts/Metropolis-Regular.woff') format('woff');
+        }
+
+        @font-face {
+            font-family: 'metropolis_semibold';
+            src: url('https://ayesa-assets.s3-eu-west-1.amazonaws.com/fonts/Metropolis-SemiBold.woff2') format('woff2'),
+                 url('https://ayesa-assets.s3-eu-west-1.amazonaws.com/fonts/Metropolis-SemiBold.woff') format('woff');
+        }
+
+        @font-face {
+            font-family: 'moderat_black';
+            src: url('https://ayesa-assets.s3-eu-west-1.amazonaws.com/fonts/Moderat-Black.woff2') format('woff2'),
+                 url('./fonts/Moderat-Black.woff') format('woff');
+        }
+
+        @font-face {
+            font-family: 'moderat_regular';
+            src: url('https://ayesa-assets.s3-eu-west-1.amazonaws.com/fonts/Moderat-Regular.woff2') format('woff2'),
+                 url('https://ayesa-assets.s3-eu-west-1.amazonaws.com/fonts/Moderat-Regular.woff') format('woff');
+        }
+
+.home .section.hero.hero--primary {
+  background: blue;
+  height: 1000vh;
+}
+
+.home .section.hero.hero--primary .hero__container {
+  color: white;
+  font-weight: 400;
+  margin: auto;
+  max-width: 550px;
+}
+
+.home .hero--primary .hero__subtitle {
+  width: 100%;
+}
+
+.home .section.hero.hero--primary .hero__container h1.hero__title {
+  display: none;
+}
+.home .section.hero.hero--primary .hero__container .hero__subtitle {
+  margin: 0;
+}
+
+.home .section.hero.hero--primary .hero__container .hero__subtitle .hero__text {
+  margin: 0;
+}
+
+.home .section.hero.hero--primary .hero__container .hero__subtitle .hero__text .title{
+  font-family: moderat_black, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 70px !important;
+  line-height: 0.9;
+}
+.home .section.hero.hero--primary .hero__container .hero__subtitle .hero__text .title span{
+  display: block;
+  font-size: 70px !important;
+}
+
+.home .section.hero.hero--primary .hero__container .hero__subtitle .hero__text .title strong{
+  display: inline;
+  color: #fe3384;
+  font-size: 70px !important;
+}
+
+.home .section.hero.hero--primary .hero__container .text-pink {
+  color: #fe3384;
+}
+
+.home .section.hero.hero--primary .hero__container .hero__subtitle .hero__text .description {
+  font-size: 18px !important;
+  font-family: metropolis_regular, Arial, sans-serif;
+  margin: 30px 0;
+}
+.home .section.hero.hero--primary .hero__container .hero__subtitle .hero__text .description b{
+  font-family: moderat_black, Arial, sans-serif;
+  font-size: 18px !important;
+}
+
+.home .section.hero.hero--primary .hero__container .hero__subtitle .hero__text .container--countdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+}
+
+.home .section.hero.hero--primary .hero__container .hero__subtitle .hero__text .container--countdown .avt {
+  font-size: 22px !important;
+  border: 4px solid white !Important;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  font-family: 'moderat_black', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  justify-content: center;
+  color: #fff;
+  width: 100%;
+  border: 2px solid #fff;
+  font-size: 20px;
+  max-width: 80px;
+  height: 80px;
+}
+
+
+
+#time {
+  display: flex;
+  gap: 30px;
+}
+
+.svg-counter {
+  display: flex;
+  justify-content: center;
+}
+
+#time .circle {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.svg-counter .circle svg{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform: rotate(270deg);
+}
+
+.svg-counter .circle svg circle{
+  height: 100%;
+  width: 100%;
+  fill: transparent;
+  stroke-width: 3;
+  stroke: rgb(255, 255, 255, .2);
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+
+.svg-counter .circle svg circle:nth-child(2){
+  stroke: var(--clr);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+
+#time div {
+  position: absolute;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  font-size: 30px;
+  font-family: metropolis_regular, Arial, sans-serif;
+}
+
+#time div span {
+  position: absolute;
+  transform: translateX(-50%) translateY(-10px);
+  font-size: 0.35em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#time .dots {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1000;
+}
+
+#time .dots::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  width: 15px;
+  height: 15px;
+  background: var(--clr);
+  border-radius: 50%;
+  box-shadow: 0 0 20px var(--clr),
+  0 0 60px var(--clr);
+}

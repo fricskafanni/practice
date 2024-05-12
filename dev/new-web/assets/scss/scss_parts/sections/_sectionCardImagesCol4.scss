@@ -1,0 +1,89 @@
+// Section Card Images
+.section-card_images_col4 {
+    background: $grey;
+    padding: 150px 0 100px;
+    .section-card_images_col4-inner {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        .section-card_images_col4-title{
+            display: block;
+            width: 40%;
+            max-width: 500px;
+        }
+        .section-card_images_col4-text{
+            display: block;
+            width: 50%;
+            max-width: 750px;
+        }
+        .section-card_images_col4-box_cards{
+            display: flex;
+            gap: 10px;
+            align-items: stretch;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 100%;
+            margin-top: 50px;
+            .section-card_images_col4-box_cards-item{
+                min-height: 390px;
+                width: calc(25% - 10px);
+                
+                &:first-child{
+                    background: url("../../assets/images/img3.jpg");
+                    background-size: cover;
+                }
+                &:nth-child(2){
+                    background:  url("../../assets/images/img3.jpg");
+                    background-size: cover;
+                }
+                &:nth-child(3){
+                    background:  url("../../assets/images/img1.jpg");
+                    background-size: cover;
+                }
+                &:last-child{
+                    background:  url("../../assets/images/img2.jpg");
+                    background-size: cover;
+                } 
+            }
+        }
+    }
+}
+
+@include mq($breakpoints-mq--768) {
+    .section-card_images_col4 {
+        padding: 50px 0;
+        .section-card_images_col4-inner {
+            flex-direction: column;
+            .section-card_images_col4-title{
+                width: 100%;
+            }
+            .section-card_images_col4-text{
+                width: 100%;
+                max-width: 100%;
+                margin-top: 20px;
+            }
+            .section-card_images_col4-box_cards{
+                 flex-flow: row wrap;
+                .section-card_images_col4-box_cards-item{
+                    width: calc(50% - 10px);
+                }
+            }
+        }
+    }
+}
+
+@include mq($breakpoints-mq--480) {
+    // Section Card Images
+    .section-card_images_col4 {
+        padding: 35px 0;
+        .section-card_images_col4-inner {
+             .section-card_images_col4-box_cards{
+                .section-card_images_col4-box_cards-item{
+                    width: 100%;
+                    max-width: 320px;
+                    margin: 0 15px;
+                }
+            }
+        }
+    }
+}

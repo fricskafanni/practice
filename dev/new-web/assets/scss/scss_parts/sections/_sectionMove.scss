@@ -1,0 +1,45 @@
+// Section Move
+.section-move {
+    background: $dark-blue;
+    padding: 100px 0;
+    position: relative;
+    
+    .section-move-inner{
+        display: flex;
+        justify-content: space-between;
+        
+        .section-move-text-container{
+            width: 50%;
+            align-content: center;
+            max-width: 590px;
+            
+            .section-move-text{
+                padding: 0 0 20px;
+            }
+        }
+        
+        .section-move-img{
+            width: 50%;
+        }
+    }
+    
+}
+
+@include mq($breakpoints-mq--768) {
+    .section-move {
+        .section-move-inner{
+            flex-direction: column;
+            .section-move-text-container{
+                width: 100%;
+                padding: 0 0 40px;
+                .section-move-text{
+                    width: 100%;
+                }
+            }
+            .section-move-img{
+                width: 100%;
+                height: 400px;
+            }
+        }
+    }
+}

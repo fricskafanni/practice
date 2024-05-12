@@ -1,0 +1,23 @@
+//Slick arrow button component
+.sclick_arrows-container{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    
+    .slide-arrow.slick-arrow{
+        border: unset;
+        cursor: pointer;
+        background: transparent;
+    }
+    .prev::before{
+        content: url("../../assets/images/prevArrow.png");
+        padding: 0 10px;
+    }
+    .next::before{
+        content: url("../../assets/images/nextArrow.png");
+    }
+}

@@ -1,0 +1,64 @@
+//Section Home Sin Car Sharing
+.section-home_sin_car_sharing {
+    background: $grey;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+    .section-home_sin_car_sharing-inner{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        .section-home_sin_car_sharing-container {
+            min-height: 710px;
+            width: 100%;
+            margin: 100px 0;
+            padding: 0 0 50px 150px;
+            border-radius: 10px;
+            background: url("../../assets/images/world.png");
+            background-size: cover;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: flex-end;
+            
+            
+            .section-home_sin_car_sharing-text-content{
+                display: block;
+                width: 50%;
+                height: fit-content;
+                max-width: 520px;
+                
+                .text-padding {
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+}
+
+@include mq($breakpoints-mq--768) {
+    .section-home_sin_car_sharing {
+    
+        .section-home_sin_car_sharing-inner{
+            .section-home_sin_car_sharing-container {
+                padding: 50px;
+                
+                .section-home_sin_car_sharing-text-content{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@include mq($breakpoints-mq--480) {
+    .section-home_sin_car_sharing {
+    
+        .section-home_sin_car_sharing-inner{
+            .section-home_sin_car_sharing-container {
+                padding: 10px;
+                min-height: unset;
+                height: 575px;
+            }
+        }
+    }
+}

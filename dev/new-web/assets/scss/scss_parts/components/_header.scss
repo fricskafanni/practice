@@ -1,0 +1,27 @@
+// Header
+
+.header {
+    height: 89px;
+    
+    .header-inner{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        
+        .header-menu-container{
+            display: flex;
+            gap: 25px;
+            
+            .menu-content{
+                display: flex;
+                gap: 20px;
+                
+                &--border-right {
+                    border-right: 1px solid $black;
+                    padding: 0 25px;
+                }
+            }
+        }
+    }
+}

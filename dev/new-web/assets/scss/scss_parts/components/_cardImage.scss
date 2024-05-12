@@ -1,0 +1,28 @@
+//Card image Item
+.card-item-container{
+    .card-item-image{
+        width: 100%;
+        min-height: 390px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border-radius: 15px;
+        overflow: hidden;
+        padding: 12px;
+        .textCard{
+            margin-top: 20px;
+            min-height: 60px;
+        }
+    }
+}
+
+@include mq($breakpoints-mq--1200) {
+    .card-item-image{
+       min-height: 320px; 
+    }
+}
+
+
+@include mq($breakpoints-mq--480) {
+    
+}

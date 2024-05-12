@@ -1,0 +1,9 @@
+body{
+  background-color:#f1f1f1 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-holder{
+  max-width: 300px;
+}

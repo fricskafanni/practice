@@ -1,0 +1,77 @@
+// Section Card Images
+
+.section-card_images_col4-second {
+    background: $grey;
+    padding: 100px 0 100px;
+    .section-card_images_col4-second-inner {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        .section-card_images_col4-second-title{
+            display: flex;
+            width: 100%;
+        }
+        .section-card_images_col4-second-text{
+            display: block;
+            width: 100%;
+        }
+        .section-card_images_col4-second-box_cards{
+            display: flex;
+            gap: 10px;
+            align-items: stretch;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 100%;
+            margin-top: 50px;
+            flex-flow: row wrap;
+            .section-card_images_col4-second-box_cards-item{
+                width: calc(50% - 10px);
+                
+                &:first-child{
+                    background: url("../../assets/images/innovadores.png");
+                    background-size: cover;
+                }
+                &:nth-child(2){
+                    background:  url("../../assets/images/humanos.png");
+                    background-size: cover;
+                }
+                &:nth-child(3){
+                    background:  url("../../assets/images/valientes.png");
+                    background-size: cover;
+                }
+                &:last-child{
+                    background:  url("../../assets/images/abiertos.png");
+                    background-size: cover;
+                } 
+            }
+        }
+    }
+}
+
+@include mq($breakpoints-mq--768) {
+    // Section Card Images
+    .section-card_images_col4-second {
+        .section-card_images_col4-second-inner {
+            .section-card_images_col4-second-title{
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@include mq($breakpoints-mq--480) {
+    // Section Card Images
+    .section-card_images_col4-second {
+        padding: 35px 0;
+        .section-card_images_col4-second-inner {
+             .section-card_images_col4-second-box_cards{
+                .section-card_images_col4-second-box_cards-item{
+                    width: 100%;
+                    max-width: 320px;
+                    margin: 0 15px;
+                    min-height: 235px;
+                }
+            }
+        }
+    }
+}

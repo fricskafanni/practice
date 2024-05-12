@@ -1,0 +1,50 @@
+//Section Home Sin Car Sharing
+.section-movilidad {
+    background: $yellow;
+    padding: 100px 0;
+    
+    .section-movilidad-inner{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        
+        .section-movilidad-title_container{
+            width: 50%;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            
+            .text {
+                padding: 0 0 20px;
+            }
+        }
+        
+        .section-movilidad-image_container{
+            width: 50%;
+            
+            .section-movilidad-image_content{
+                width: 100%;
+                height: 479px;
+                background: url("../../assets/images/buildings.png");
+                background-size: cover;
+                border-radius: 30px;
+            }
+        }
+    }
+}
+
+
+@include mq($breakpoints-mq--768) {
+    .section-movilidad {
+        .section-movilidad-inner{
+            flex-flow: column wrap;
+            
+            .section-movilidad-title_container{
+                width: 100%;
+            }
+            .section-movilidad-image_container{
+                width: 100%;
+            }
+        }
+    }
+}
